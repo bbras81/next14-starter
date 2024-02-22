@@ -17,14 +17,14 @@ const Links = () => {
         },
         {
             title: "Blog",
-            path: "/posts",
+            path: "/blog",
         },
     ]
     
 return (
 <div>
     {links.map((link=>(
-        <link href={link.path} key={links.title}>{link.title}</link>
+        <Link href={link.path} key={link.title}>{link.title}</Link>
     )))}
 </div>
 )
