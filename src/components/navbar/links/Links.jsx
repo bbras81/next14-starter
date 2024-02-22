@@ -20,9 +20,7 @@ const Links = () => {
             path: "/posts",
         },
     ]
-
-
-
+    
 return (
 <div>
     {links.map((link=>(
