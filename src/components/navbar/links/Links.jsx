@@ -1,3 +1,6 @@
+import Link from "next/link";
+
+
 const Links = () => {
     const links = [
         {
@@ -5,7 +8,7 @@ const Links = () => {
             path: "/",
         },
         {
-            title: "About",
+            title: "Sobre nós",
             path: "/about",
         },
         {
@@ -21,7 +24,11 @@ const Links = () => {
 
 
 return (
-<div></div>
+<div>
+    {links.map((link=>(
+        <link href={link.path} key={links.title}>{link.title}</link>
+    )))}
+</div>
 )
 }
 export default Links
