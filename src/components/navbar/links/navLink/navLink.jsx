@@ -9,11 +9,11 @@ import { usePathname } from 'next/navigation'
 
 const NavLink = ({item}) => {
 
-    const patName = usePathname()
+    const pathName = usePathname()
 
 return (
 <Link href={item.path} className={`${styles.container} ${
-    patName === item.path && styles.active}`}>
+    pathName === item.path && styles.active}`}>
     {item.title}
 </Link>
 )
