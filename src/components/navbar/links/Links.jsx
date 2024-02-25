@@ -1,6 +1,6 @@
 "use client";
 
-import {useState} from "react"
+import { useState } from "react";
 import styles from "./links.module.css";
 import NavLink from "./navLink/navLink";
 
@@ -28,7 +28,7 @@ const Links = () => {
 
   //Temporary
   const session = true;
-  const isAdmin = false;
+  const isAdmin = true;
 
   return (
     <div className={styles.container}>
@@ -51,7 +51,12 @@ const Links = () => {
           )
         }
       </div>
-      <button className={styles.menuButton} onClick={() => setOpen((prev) => !prev)}>Menu</button>
+      <button
+        className={styles.menuButton}
+        onClick={() => setOpen((prev) => !prev)}
+      >
+        Menu
+      </button>
       {open && (
         <div className={styles.mobileLinks}>
           {links.map((link) => (

@@ -34,13 +34,13 @@ a{
 }
 
 
-@media (max-width: 1536px){
+@media only screen and (max-width: 1536px){
     .container{
         width: 1366px;
     }
 }
 
-@media (max-width: 1280px){
+@media only screen and (max-width: 1280px){
     .container{
         width: 1024px;
         padding-left: 20px;
@@ -48,18 +48,18 @@ a{
     }
 }
 
-@media (max-width: 1024px){
+@media only screen and (max-width: 1024px){
     .container{
         width: 768px;
     }
 }
 
-@media (max-width: 768px){
+@media only screen and (max-width: 768px){
     .container{
         width: 640px;
     }
 }
-@media (max-width: 640px){
+@media only screen and (max-width: 640px){
     .container{
         width: 475px;
     }
