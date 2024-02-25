@@ -2,10 +2,10 @@ import Links from "./links/Links";
 import styles from "./navbar.module.css"
 
 
-const Navbar = () => {
+const NavLink = ({item}) => {
     return (
         <div className={styles.container}>
-            <div className={styles.logo}>Logo</div>
+            <div className={styles.logo}>NavLink</div>
             <div>
                 <Links/>
             </div>
@@ -13,4 +13,4 @@ const Navbar = () => {
     )
   };
   
-  export default Navbar;
+  export default NavLink;
